@@ -4,7 +4,7 @@
 /* font-family: 'Jost', sans-serif; */
 
 /********************** 글로벌 설정 *********************/
-html, body {font-size: 16px; font-family: 'Noto Sans KR', sans-serif; height: 5000px;}
+html, body {font-size: 16px; font-family: 'Jost', 'Noto Sans KR', sans-serif; height: 5000px;}
 .wrapper {width: 1368px; margin: auto;}
 .bt-ghost {padding: .875em 1.75em; border: 1px solid #999; color: #ffff; transition: all .5s;}
 .bt-ghost:hover {background-color: #ffff; color: #b38859;}
@@ -30,7 +30,7 @@ html, body {font-size: 16px; font-family: 'Noto Sans KR', sans-serif; height: 50
 .notice-wrapper .notice-content .bt-today {color: #ffff;}
 
 /********************** header-wrapper *********************/
-.header-wrapper {color: #ffff; position: fixed; width: 100%; transition: top 0.35s;}
+.header-wrapper {color: #ffff; position: fixed; width: 100%; transition: top 0.35s; z-index: 99;}
 
 .header-wrapper .link-wrapper {border-bottom: 1px solid rgba(255, 255, 255, .1);}
 .header-wrapper .link-wrap {padding: 1em 0; display: flex; justify-content: flex-end; align-items: center;}
