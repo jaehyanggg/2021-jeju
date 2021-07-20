@@ -1,8 +1,12 @@
-body > section {position: relative; z-index: 3; background-color: #fff; padding: 5em 0;}
+body > section {position: relative; z-index: 3; background-color: #fff; padding: 5em 0; width: 100%; overflow: hidden;}
 .title-wrap {text-align: center; margin-bottom: 3em;}
 .title-wrap h2.title {font-size: 3.5em; margin-bottom: .25em; font-family: 'Jost', sans-serif; letter-spacing: .05em;}
 .title-wrap h3.title {font-size: 2em; margin-bottom: .175em;}
 .title-wrap h4.title {font-size: 1.125em; margin-bottom: .125em; color: #888;}
+
+.slide-stage .box {width: 200%; height: 100%; position: absolute; top: 0; z-index: 15;}
+.slide-stage .box.left {background-image: linear-gradient(to left, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1));}
+.slide-stage .box.right {background-image: linear-gradient(to right, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1));}
 
 /********************** main-wrapper *********************/
 .main-wrapper {width: 100%; height: 100vh;}
@@ -66,9 +70,9 @@ body > section {position: relative; z-index: 3; background-color: #fff; padding:
 .dream-wrapper .slide-stage .cont-wrap .tag {font-size: 1em; color: #fff; background-color: #ff5100; padding: 0 .75em; position: absolute; height: 26px; line-height: 26px; border-radius: 13px; top: -13px; left: 10%;}
 .dream-wrapper .slide-stage .pager-slide {text-align: center; margin-top: 2em; position: absolute; width: 100%;}
 .dream-wrapper .slide-stage .pager-slide .swiper-pagination-bullet-active {border: 1px solid #b38859;}
-.dream-wrapper .slide-stage .box {width: 200%; height: 100%; position: absolute; top: 0; z-index: 15;}
-.dream-wrapper .slide-stage .box.left {left: calc(-200% - 9px); background-image: linear-gradient(to left, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1));}
-.dream-wrapper .slide-stage .box.right {right: calc(-200% - 9px); background-image: linear-gradient(to right, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1));}
+
+.dream-wrapper .slide-stage .box.left {left: calc(-200% - 9px);}
+.dream-wrapper .slide-stage .box.right {right: calc(-200% - 9px);}
 
 .dream-wrapper .bt-wrap {text-align: center;}
 .dream-wrapper .bt-wrap .bt-ghost.white {padding: 1em 3em;}
@@ -92,7 +96,7 @@ body > section {position: relative; z-index: 3; background-color: #fff; padding:
 
 
 /********************** style-wrapper *********************/
-.style-wrapper {background-color: #f5f0e7;}
+.style-wrapper {background-color: #f5f0e7; padding: 5em 0 0 0;}
 .style-wrapper .list-wrap {display: flex;}
 .style-wrapper .list {flex: 0 0 33.3333%; position: relative;}
 .style-wrapper .list .hover-bg {background-color: rgba(179, 136, 89, 0.95); opacity: 0; width: 100%; height: 100%; position: absolute; top: 0; left: 0; transition: all .5s;}
@@ -109,9 +113,9 @@ body > section {position: relative; z-index: 3; background-color: #fff; padding:
 .style-wrapper .list .bt-wrap .bt-ghost:last-child {flex: 0 0 100%;}
 
 /* moving-aniamtion */
-.style-wrapper .list .bar {width: 30px; height: 2px; background-color: #fff; margin: 0; transition: transform .35s; transform: scaleX(0);}
+.style-wrapper .list .bar {width: 30px; height: 2px; background-color: #fff; margin: 0; transition: transform .5s; transform: scaleX(0);}
 .style-wrapper .list .moving-stage {overflow: hidden; height: 0; margin-bottom: 0;}
-.style-wrapper .list .moving-box {transition: all .35s; transform: translateY(100%); opacity: 0;}
+.style-wrapper .list .moving-box {transition: all .5s; transform: translateY(100%); opacity: 0;}
 .style-wrapper .list:hover .bar {transform: scaleX(1); margin: 2em auto 1.5em auto;}
 .style-wrapper .list:hover .moving-stage {height: auto;}
 .style-wrapper .list:hover .moving-stage.content {margin-bottom: 2.5em;}
@@ -119,11 +123,38 @@ body > section {position: relative; z-index: 3; background-color: #fff; padding:
 
 
 
-/********************** room-wrapper *********************/
 
+/********************** room-wrapper *********************/
+.room-wrapper .slide-stage {position: relative; margin-bottom: 6em;}
+.room-wrapper .slide-stage .slide-bg {
+	background-image: linear-gradient(to right, #28354b, #28354b 60%, #fff 60%, #fff);}
+.room-wrapper .slide-stage .swiper-container {width: calc(90% - 60px); transform: translate(45%, 10%);}
+.room-wrapper .slide-stage .pager-slide {text-align: center; margin-top: 5em; position: absolute; width: 100%;}
+.room-wrapper .slide-stage .pager-slide .swiper-pagination-bullet-active {border: 1px solid #b38859;}
+.room-wrapper .desc-wrapper {position: absolute; width: 35%; height: 100%; top: 0; left: 80px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; color: #fff;}
+.room-wrapper .desc-wrapper .tag {color: #b38859; font-size: 1.125em; margin-bottom: .5em;}
+.room-wrapper .desc-wrapper .title {font-size: 2.5em; margin-bottom: .5em;}
+.room-wrapper .desc-wrapper .desc {font-size: 1.125em; color: #999; line-height: 1.5; font-weight: 300; margin-bottom: 1em;}
+.room-wrapper .desc-wrapper .bt-ghost {border: 1px solid #fff;}
+.room-wrapper .desc-wrapper .moving-stage {overflow: hidden;}
+.room-wrapper .desc-wrapper .moving-box {transition: all .35s; transform: translateY(100%);}
+.room-wrapper .desc-wrapper .moving-box.active {transform: translateY(0);}
 
 
 /********************** svc-wrapper *********************/
+.svc-wrapper {background-image: linear-gradient(#f5f5f5, #f5f5f5 55%, #fff 55% , #fff); padding-bottom: 10em;}
+.svc-wrapper .title-wrap.wrapper {text-align: left; margin-top: 4em;}
+.svc-wrapper .title-wrap.wrapper h3.title {font-size: 2.75em; margin-bottom: .5em;}
+.svc-wrapper .title-wrap.wrapper h4.title {font-weight: 300;}
+.svc-wrapper .slide-stage .swiper-container {overflow: visible;}
+.svc-wrapper .slide-stage .img-wrap {margin-bottom: 2em;}
+.svc-wrapper .slide-stage h4.title {font-size: 2em; color: #444;}
+
+.svc-wrapper .slide-stage .box.left {left: calc(-200% - 39px);}
+.svc-wrapper .slide-stage .box.right {right: calc(-200% - 39px);}
+
+.svc-wrapper .slide-stage .slide {transition: transform .6s;}
+.svc-wrapper .slide-stage .slide.active {transform: translateY(-20%);}
 
 
 
