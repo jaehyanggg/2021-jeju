@@ -232,6 +232,16 @@ section.sns-wrapper {background-color: #f5f5f5;}
 }
 
 @media (max-width: 1199px) {
+	.dream-wrapper .title-wrap h2.title {font-size: 3em;}
+	.dream-wrapper .title-wrap h4.title {font-size: .85em;}
+
+	.style-wrapper .list-wrap .hover-cont h3.title {font-size: 1.5em;}
+	.style-wrapper .list-wrap .content {display: none;}
+	.style-wrapper .list-wrap .moving-stage {font-size: .85em;}
+
+	.room-wrapper .title-wrap h2.title {font-size: 3em;}
+	.room-wrapper .desc-wrapper {font-size: .65em;}
+
 	.svc-wrapper .title-wrap h2.title {font-size: 3em;}
 	.svc-wrapper .title-wrap.wrapper h3.title {font-size: 2em;}
 
@@ -242,7 +252,7 @@ section.sns-wrapper {background-color: #f5f5f5;}
 }
 
 @media (max-width: 991px) {
-
+	
 	.contact-wrapper > .wrapper {flex-wrap: wrap;}
 	.contact-wrapper > .wrapper > div {width: 100%;}
 	.contact-wrapper .mail-wrapper {border-top: none; padding: 2em 0;}
@@ -250,6 +260,15 @@ section.sns-wrapper {background-color: #f5f5f5;}
 }
 
 @media (max-width: 767px) {
+	.dream-wrapper .title-wrap h2.title {font-size: 2.5em;}
+
+	.style-wrapper .title-wrap h3.title {font-size: 1.25em;}
+	.style-wrapper .list-wrap .hover-cont h3.title {font-size: 1em;}
+	.style-wrapper .list-wrap .moving-stage {display: none;}
+
+	.room-wrapper .title-wrap h2.title {font-size: 2.5em;}
+	.room-wrapper .desc-wrapper .desc {display: none;}
+
 	.svc-wrapper .title-wrap h2.title {font-size: 2.5em;}
 	.svc-wrapper .title-wrap.wrapper h3.title {font-size: 1.5em;}
 	.svc-wrapper .title-wrap.wrapper h4.title {font-size: 1em;}
