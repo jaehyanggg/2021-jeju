@@ -228,7 +228,7 @@ section.sns-wrapper {background-color: #f5f5f5;}
 
 /********************** 반응형 설정 *********************/
 @media (max-width: 1399px) {
-	
+	.main-wrapper .slide .slide-title {font-size: 4em;}
 }
 
 @media (max-width: 1199px) {
@@ -252,6 +252,7 @@ section.sns-wrapper {background-color: #f5f5f5;}
 }
 
 @media (max-width: 991px) {
+	.main-wrapper .info-stage {display: none;}
 	
 	.contact-wrapper > .wrapper {flex-wrap: wrap;}
 	.contact-wrapper > .wrapper > div {width: 100%;}
@@ -260,6 +261,8 @@ section.sns-wrapper {background-color: #f5f5f5;}
 }
 
 @media (max-width: 767px) {
+	.main-wrapper .slide .slide-title {font-size: 3em;}
+
 	.dream-wrapper .title-wrap h2.title {font-size: 2.5em;}
 
 	.style-wrapper .title-wrap h3.title {font-size: 1.25em;}
