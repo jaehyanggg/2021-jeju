@@ -18,8 +18,8 @@
 	<script src="../js/util.js"></script>
 </head>
 <body>
-	<!-- header-wrapper -->
-	<aside class="notice-wrapper">
+	<!-- header-wrapper common -->
+	<header class="notice-wrapper">
 		<div class="notice-wrap wrapper">
 			<h2 class="notice-bullet">공지</h2>
 			<h3 class="notice-title">위생관련 공지사항</h3>
@@ -34,38 +34,38 @@
 				강화된 위생 조치는 아래 안전과 웰빙 정책 페이지에서 확인하실 수 있습니다.
 			</p>
 			<div class="bt-wrap">
-				<button class="bt-mroe bt-ghost">READ MORE</button>
-				<button class="bt-today bt-anchor">오늘 다시 보지않기</button>
+				<button class="bt-more bt-ghost">READ MORE</button>
+				<button class="bt-today bt-anchor">오늘 다시 보지 않기</button>
 			</div>
 		</div>
-	</aside>
+	</header>
 	<header class="header-wrapper">
-			<div class="link-wrapper">
-				<div class="wrapper">
-					<ul class="link-wrap">
-						<li class="link"><a href="#">로그인</a></li>
-						<li class="link"><a href="#">About Us</a></li>
-						<li class="link"><a href="#">오시는 길</a></li>
-						<li class="link link-lang">
-							<div class="sel">
-								<span>한국어</span> <i class="bt-lang bi-chevron-down"></i>
-							</div>
-							<div class="hover">
-								<div class="lang">English</div>
-								<div class="lang">Japanese</div>
-							</div>
-						</li>
-					</ul>
-				</div>
+		<div class="link-wrapper">
+			<div class="wrapper">
+				<ul class="link-wrap">
+					<li class="link"><a href="#">로그인</a></li>
+					<li class="link"><a href="#">About Us</a></li>
+					<li class="link"><a href="#">오시는 길</a></li>
+					<li class="link link-lang">
+						<div class="sel">
+							<span>한국어</span> <i class="bt-lang bi-chevron-down"></i>
+						</div>
+						<div class="hover">
+							<div class="lang">English</div>
+							<div class="lang">Japanese</div>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<nav class="navi-wrapper">
-				<div class="wrapper">
-					<h1 class="logo-wrap">
-						<a class="logo">
-							<img src="../img/common/logo-white.png" alt="로고" class="logo-white mw-100">
-							<img src="../img/common/logo-color.png" alt="로고" class="logo-color mw-100">
-						</a>
-					</h1>
+		</div>
+		<nav class="navi-wrapper">
+			<div class="wrapper">
+				<h1 class="logo-wrap">
+					<a class="logo">
+						<img src="../img/common/logo-white.png" alt="로고" class="logo-white mw-100">
+						<img src="../img/common/logo-color.png" alt="로고" class="logo-color mw-100">
+					</a>
+				</h1>
 				<ul class="navi-wrap navi-wrap-lt">
 					<li class="navi">
 						<a href="#">OFFERS</a>
@@ -73,7 +73,6 @@
 					<li class="navi has-sub">
 						<a href="#">STAY</a>
 						<ul class="sub-wrapper stay">
-							<!-- common.css - .sub-wrapper::before 부분 즉, 금색작대기 -->
 							<li class="sub-wrap">
 								<h3 class="title"><a href="#">OVERVIEW</a></h3>
 								<ul class="list-wrap">
@@ -83,12 +82,12 @@
 										<div class="list"><a href="#">65m² 트윈 룸</a></div>
 									</li>
 									<li class="lists">
-										<h4 class="title"><a href="#"">스위트</a></h4>
-										<div class="list"><a href="#"">130m² 그랜드 스위트</a></div>
-										<div class="list"><a href="#"">130m² 프리미어 스위트</a></div>
-										<div class="list"><a href="#"">130m² 코너 스위트</a></div>
-										<div class="list"><a href="#"">195m² 디플로매틱 스위트</a></div>
-										<div class="list"><a href="#"">260m² 프레지덴셜 스위트</a></div>
+										<h4 class="title"><a href="#">스위트</a></h4>
+										<div class="list"><a href="#">130m² 그랜드 스위트</a></div>
+										<div class="list"><a href="#">130m² 프리미어 스위트</a></div>
+										<div class="list"><a href="#">130m² 코너 스위트</a></div>
+										<div class="list"><a href="#">195m² 디플로매틱 스위트</a></div>
+										<div class="list"><a href="#">260m² 프레지덴셜 스위트</a></div>
 									</li>
 								</ul>
 								<h3 class="title"><a href="#">시설 안내</a></h3>
@@ -100,7 +99,7 @@
 						<a href="#">WINE & DINE</a>
 						<ul class="sub-wrapper wine">
 							<li class="sub-wrap">
-								<h3 class="title"><a href="#"">OVERVIEW</a></h3>
+								<h3 class="title"><a href="#">OVERVIEW</a></h3>
 								<ul class="list-wrap">
 									<li class="lists">
 										<h4 class="title"><a href="#">중식</a></h4>
@@ -109,8 +108,8 @@
 										<div class="list"><a href="#">99 밸리</a></div>
 									</li>
 									<li class="lists">
-										<div class="list"><a href="#">유메야마</a></div>
 										<h4 class="title"><a href="#">일식</a></h4>
+										<div class="list"><a href="#">유메야마</a></div>
 									</li>
 									<li class="lists">
 										<h4 class="title"><a href="#">한식</a></h4>
@@ -165,8 +164,8 @@
 						<button class="bt-book bt-ghost gold">BOOK NOW</button>
 					</li>
 				</ul>
-				</div>
-			</nav>
+			</div>
+		</nav>
 	</header>
 
 	<!-- main-wrapper -->
@@ -181,8 +180,8 @@
 						<h2 class="slide-title">
 							WELCOME TO<br>JEJU DREAM TOWER
 						</h2>
-						</div>
-						<div class="ani-stage">
+					</div>
+					<div class="ani-stage">
 						<p class="bt-video slide-desc">
 							<i class="far fa-play-circle"></i> 영상보기
 						</p>
@@ -198,11 +197,9 @@
 						</h2>
 					</div>
 					<div class="ani-stage">
-							<p class="slide-desc">
-								<button class="br-more bt-ghost">
-									자세히보기<i class="bi-chevron-left"></i>
-								</button>
-							</p>
+						<p class="slide-desc">
+							<button class="bt-more bt-ghost angle">자세히보기</button>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -251,11 +248,36 @@
 
 
 	<!-- aside -->
-	<!-- cookie-wraper -->
-	<aside class="cookie-wrapper">
-
-	</aside>
-
+	<!-- cookie-wrapper -->
+	<div class="cookie-wrapper">
+		<div class="wrapper">
+			<div class="cont-wrap">
+				<p>
+					당사에서는 사용자들에 맞춰 사이트를 설정하고 사이트를 보다 원활하게 이용할 수 있도록 쿠키를 사용하고 있습니다. 이 사이트를 사용하면 쿠키 사용에 동의하게 됩니다.
+					사용된 쿠키 및 쿠키 제거 방법에 대한 자세한 내용은 쿠키 정책 을 참조하십시오.	
+				</p>
+				<i class="bt-close bi-x"></i>
+			</div>
+			<div class="bt-wrap">
+				<button class="bt-close bt-ghost">동의함</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal-wrapper modal-video">
+		<div class="modal-stage">
+			<div class="modal-wrap">
+				<div class="modal-top">
+					<i class="bi-x bt-close"></i>
+				</div>
+				<div class="modal-center">
+					<video src="../img/index/main01.mp4" muted autoplay loop></video>
+				</div>
+				<div class="modal-bottom">
+					<button class="bt-ghost angle">ALL VIDEO</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="../js/common.js"></script>
 	<script src="../js/index.js"></script>
